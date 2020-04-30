@@ -27,6 +27,11 @@ namespace WebApplication2.Controllers
             return View("index",model);
         }
 
+        public IActionResult Test()
+        {
+            throw new InvalidOperationException("Sorry, operation not supported!");
+        }
+
         public IActionResult Privacy()
         {
             return View();
